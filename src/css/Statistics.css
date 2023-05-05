@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.statistics-box {
+  margin-top: 3%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  gap: 10px;
+}
+.statistics-chart {
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02),
+    0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035),
+    0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05),
+    0px 0px 80px rgba(0, 0, 0, 0.07);
+}
+.statistics-chart > h2 {
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 1px;
+}
+
+.statistics-content {
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.02),
+    0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 10px rgba(0, 0, 0, 0.035),
+    0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 33.4px rgba(0, 0, 0, 0.05),
+    0px 0px 80px rgba(0, 0, 0, 0.07);
+}
+.statistics-content > table > thead > tr > th {
+  line-height: 8vh;
+  font-size: 1.2rem;
+}
+.statistics-content > table > tbody > tr > td {
+  line-height: 7vh;
+}
+@media screen and (max-width: 415px) {
+  .statistics {
+    width: 100%;
+  }
+  .statistics-content > table {
+    width: 100%;
+  }
+  .statistics > button {
+    width: 30%;
+  }
+  .statistics-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .chart {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
